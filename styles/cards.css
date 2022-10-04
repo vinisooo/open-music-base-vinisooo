@@ -1,0 +1,57 @@
+.songs-list{
+    gap: 20px;
+    max-width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.song-card{
+    width: 320px;
+    max-width: 100%;
+    height: 260px;
+    background-color: var(--color-grey-8);
+    overflow: hidden;
+    border-radius: var(--radius-1);
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.song-card:hover{
+    background-color: var(--color-grey-7);
+}
+
+.song-image{
+    height: 44%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.song-image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.song-image img:hover{
+    width: 120%;
+    height: 120%;
+}
+
+.about-song{
+    padding: 20px;
+    height: 66%;
+}
+
+.space{
+    width: 100%;
+    display: flex;
+}
+
+.band-year{
+    gap: 20px;
+}
+

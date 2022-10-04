@@ -4,14 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/globalStyles.css" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/styles/text.css">
+    <link rel="stylesheet" href="/styles/flex.css">
+    <link rel="stylesheet" href="/styles/musicalStylesLi.css">
+    <link rel="stylesheet" href="/styles/buttons.css">
+    <link rel="stylesheet" href="/styles/rangeInput.css">
+    <link rel="stylesheet" href="/styles/cards.css">
+
     <title>Open Music</title>
   </head>
   <body>
-    <main></main>
+    <header class="main-header flex justify-between align-center">
+      <div class="header-content flex justify-between container">
+        <h1 class="header-logo">
+          <a href="#">Open Music</a>
+        </h1>
+        <button id="change-theme-btn" class="change-theme-btn light-icon flex align-center justify-center"></button>
+      </div>
+    </header>
+
+    <main class="main-content container flex direction-column">
+
+      <nav class="musical-styles-nav">
+        <h2 class="section-title">Gênero Musical</h2>
+        <ul id="style-filter" class="musical-styles flex">
+
+        </ul>
+      </nav>
+
+      <section class="price-filter">
+        <div class="flex justify-between">
+          <h2 class="section-title">Definir Preço</h2>
+          
+          <span class="filter-this-price" id="filtered-price"></span>
+        </div>
+        <input id="price-filter-range" class="price-filter-input" value="300" type="range" min="0" max="300">
+      </section>
+
+      <section class="songs-section flex direction-column" >
+
+        <h2 class="section-title">Albuns encontrados</h2>
+
+        <ul id="song-list" class="songs-list flex wrap justify-between align-center">
+
+          <!-- SONG LIST GOES HERE -->
+
+        </ul>
+      </section>
+    </main>
+
     <script src="../../scripts/theme.js"></script>
     <script src="./productsData.js"></script>
+    <script src="../../scripts/filterSongStyle.js"></script>
+    <script src="../../scripts/filterPrice.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

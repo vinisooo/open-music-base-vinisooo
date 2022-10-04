@@ -1,0 +1,46 @@
+.change-theme-btn{
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-1);
+    background-color: var(--color-grey-8);
+    border: none;
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.change-theme-btn:hover{
+    filter: brightness(0.95);
+}
+
+.light-icon{
+    background-image: url("/assets/icons/moon.svg");
+    background-size: 12px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.dark-icon{
+    background-image: url("/assets/icons/sun.svg");
+    background-size: 16px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.buySong{
+    width: 75px;
+    height: 32px;
+    background-color: var(--color-grey-7);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: var(--font-3);
+    color: var(--color-grey-2);
+    font-weight: 500;
+}
+
+.buySong:hover{
+    filter: brightness(0.95);
+    border-radius: var(--radius-1);
+}

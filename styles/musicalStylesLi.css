@@ -1,0 +1,26 @@
+.musical-styles{
+    gap: 32px 30px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding-top: 24px;
+}
+
+.musical-style{
+    background-color: var(--color-grey-8);   
+    color: var(--color-grey-2);
+    padding: 0 8px;
+    height: 32px;
+    border-radius: var(--radius-1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.musical-style:hover{
+    transform: translateY(-2px);
+    filter: brightness(0.95);
+}
+
+.selected{
+    background-color: var(--color-grey-1);
+    color: var(--color-grey-8);
+}
