@@ -13,10 +13,11 @@ function changeTheme(){
             localStorage.setItem("darkmode",true);
         }if (darkModePref){
             localStorage.removeItem("darkmode");
-            html.classList.toggle("dark-mode");
-            changeThemeBtn.classList.toggle("light-icon");
-            changeThemeBtn.classList.toggle("dark-icon");
         }
+
+        html.classList.toggle("dark-mode");
+        changeThemeBtn.classList.toggle("light-icon");
+        changeThemeBtn.classList.toggle("dark-icon");
     }) 
 
 }   
