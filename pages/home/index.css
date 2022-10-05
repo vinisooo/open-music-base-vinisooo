@@ -1,3 +1,7 @@
+body{
+    animation: displayBody 1.3s ease;
+}
+
 .main-header{
     padding-top: 65px;
     padding-bottom: 65px;
@@ -13,3 +17,13 @@
     padding-top: 32px;
 }
 
+@keyframes displayBody {
+    0%{
+        opacity: 0;
+        transform: translateX(200vh);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
