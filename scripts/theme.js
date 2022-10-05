@@ -4,7 +4,6 @@ function changeTheme(){
     const html = document.querySelector("html");
 
     changeThemeBtn.addEventListener("click", ()=>{
-        html.classList.toggle("dark-mode");
         changeThemeBtn.classList.toggle("light-icon");
         changeThemeBtn.classList.toggle("dark-icon");
 
