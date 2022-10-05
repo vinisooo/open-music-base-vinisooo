@@ -4,9 +4,7 @@ function changeTheme(){
     const html = document.querySelector("html");
 
     changeThemeBtn.addEventListener("click", ()=>{
-        changeThemeBtn.classList.toggle("light-icon");
-        changeThemeBtn.classList.toggle("dark-icon");
-
+        
         const darkModePref = localStorage.getItem("darkmode");
         if (!darkModePref){
             localStorage.setItem("darkmode",true);
